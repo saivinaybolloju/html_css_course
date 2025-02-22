@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+
+        }
+        .btn{
+            background-color: rgb(0, 128, 0);
+            color: rgb(255, 255, 255);
+            border:none;
+            font-weight: 500;
+            padding: 0.5rem;
+            text-align: center;
+            cursor: pointer;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            margin-left: 3rem;
+            margin-top: 3rem;
+            gap: 1rem;
+        }
+        .pagination{
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            gap:1rem;
+            align-items: center;
+        }
+        .pagination-left-btn,.pagination-right-btn{
+            padding: 0.5rem;
+        }
+        .stretch-btn{
+            transition:padding 1s;
+        }
+        .stretch-btn:hover{
+            padding: 1rem 1.5rem 1rem 1.5rem;
+        }
+        .dClick-btn{
+            transition: box-shadow 0.15s, transform 0.15s ;
+            box-shadow: 3px 3px 6px rgba(0,0,0,0.6);
+            position: relative;
+        }
+        .dClick-btn:active{
+            box-shadow:0px 0px 0px rgb(255, 255, 255);
+            transform: translate(2px,2px);
+        }
+        .marginAndPadding{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 1rem;
+        }
+        .marginAndPadding-btn1{
+            transition:padding 0.80s;
+        }
+        .marginAndPadding-btn1:hover{
+            padding: 0.5rem 1rem 0.5rem 1rem;
+        }
+        .marginAndPadding-btn2{
+            transition:padding 0.80s;
+        }
+        .marginAndPadding-btn2:hover{
+            padding: 0.5rem 1rem 0.5rem 1rem;
+        }
+        .marginAndPadding-btn3{
+            transition:padding 0.80s;
+        }
+        .marginAndPadding-btn3:hover{
+            padding: 0.5rem 1rem 0.5rem 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pagination">
+            <button class="pagination-left-btn">
+                Back
+            </button>
+    
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+    
+            <button class="pagination-right-btn">
+                Next
+            </button>
+    
+        </div>
+    
+        <div class="strectch">
+            <button class="btn stretch-btn">
+                Stretch
+            </button>
+        </div>
+    
+        <div class="dClick">
+            <button class="btn dClick-btn">
+                Shadow
+            </button>
+        </div>
+    
+        <div class="marginAndPadding">
+            <button class="btn marginAndPadding-btn1">
+                One
+            </button>
+            <button class="btn marginAndPadding-btn2">
+               Two 
+            </button>
+            <button class="btn marginAndPadding-btn3">
+                Three
+            </button>
+        </div>
+    </div>
+    
+</body>
+</html>
